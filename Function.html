@@ -8,11 +8,11 @@
     <style></style>
 
 </head>
-<body>
+<body id="adi">
 
-    <div id="adi">
-        
-    </div>
+        <button onclick="RED()">RED</button>
+        <button onclick="GREEN()">GREEN</button>
+        <button onclick="BLUE()">BLUE</button>
     
     <script>
 
@@ -21,6 +21,18 @@
         }
 
         abes();
+
+        function RED(){
+            document.getElementById("adi").style.backgroundColor="red";
+        }
+
+        function GREEN(){
+            document.getElementById("adi").style.backgroundColor="green";
+        }
+
+        function BLUE(){
+            document.getElementById("adi").style.backgroundColor="blue";
+        }
 
     </script>
 
