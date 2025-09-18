@@ -6,14 +6,29 @@
 <body>
   <p id="adi"></p>
   <script>
-    const toy = new Object(
+
+    class Car{
+      constructor (name , year)
       {
-        toy1:'car',
-        toy2:'elephant',
-        toy3:45
+        this.name = name;
+        this.year = year;
       }
-    );
-      document.getElementById("adi").innerHTML = toy.toy1+" This toy is good";
+    }
+    const mycar1 = new Car("Ford" , 2024);
+    const mycar2 = new Car("Audi" , 2025);
+
+    document.getElementById("adi").innerHTML = mycar1.year;
+
+
+
+    // const toy = new Object(
+    //   {
+    //     toy1:'car',
+    //     toy2:'elephant',
+    //     toy3:45
+    //   }
+    // );
+    //   document.getElementById("adi").innerHTML = toy.toy1+" This toy is good";
     
   </script>
   
